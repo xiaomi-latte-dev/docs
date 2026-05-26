@@ -1,0 +1,47 @@
+i2c i2c-INT33BE:00: deferred probe pending: (reason unknown)
+
+lp: driver loaded but no devices found
+
+rt5659 i2c-10EC5659:01: Device with ID register 808339d8 is not rt5659
+完成：驱动snd_soc_5659依赖snd_soc_rl6231, 需开启LDO-EN和RESET
+512->81=593;610->46=656
+rt5659->pdata.jd_src = 0 is RT5659_JD_NULL
+
+i2c_designware 808622C1:02: controller timed out
+
+i2c i2c-INT33BE:00: deferred probe pending: (reason unknown)
+
+sof-audio-acpi-intel-byt 808622A8:00: warning: No matching ASoC machine driver found
+sof-audio-acpi-intel-byt 808622A8:00: error: no matching ASoC machine driver found - aborting probe
+sof-audio-acpi-intel-byt 808622A8:00: error: failed to get machine info -19
+sof-audio-acpi-intel-byt 808622A8:00: error: sof_probe_work failed err: -19
+声音平台驱动注册失败，检查rt5659 tfa989x对应文件cht-bsw-rt5659.c
+
+i2c_hid_acpi i2c-FTSC1000:00: i2c_hid_get_input: incomplete report (66/12288)
+前部分都是66，最大输入宽度。解决，但是触摸屏无响应问题未能解决。另计：6.12解决此问题
+334872
+ftsc1000:00 2808:509c
+6.12-rc3仍然存在此问题
+
+Bluetooth: hci0: BCM4356A2 (001.003.015) build 0000
+Bluetooth: hci0: BCM: firmware Patch file not found, tried:
+Bluetooth: hci0: BCM: 'brcm/BCM4356A2.hcd'
+提取安卓包内文件
+
+ieee80211 phy0: brcmf_msgbuf_rxbuf_ctrl_post: Failed to alloc SKB
+
+充电bq25890-charger 电池bq27520-0
+
+lp855x i2c-XMCC0001:00: supply power not found, using dummy regulator
+背光。工作正常，忽略
+
+atomisp-isp2 0000:00:03.0: alloc_pages_bulk_array() failed
+atomisp-isp2 0000:00:03.0: alloc pages err...
+atomisp-isp2 0000:00:03.0: hmm_bo_alloc_pages failed.
+atomisp-isp2 0000:00:03.0: css init failed --- bad firmware?
+atomisp-isp2 0000:00:03.0: Failed to power on device
+atomisp-isp2 0000:00:03.0: Failed to power on device
+isp固件版本不对
+
+atomisp_ov5693: module is from the staging directory, the quality is unknown, you have been warned.
+忽略
